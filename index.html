@@ -191,10 +191,12 @@
   </div>
 
 
-<div class="container row akansection" id="akansection">
-    <div class="col-sm -6 align-self-center justify-content-lg-center">
+<div class="container-fluid row akansection" id="akansection">
+    <div class="col-sm -6 align-self-center justify-content-lg-center p-5">
         <form action="#" id="akan-form">
-            <div class="form-group form-check">
+            <div class="form-group form-check"><br><br><br><br>
+                <label>Full name</label>
+                <input type="text" class="form-control" name="usrname" id="usrname" placeholder="Your full names">
               <label>Day</label>
               <input type="number" class="form-control" min="1" max="31" name="day" id="day" placeholder="Day(1-31)">
               <label>Month</label>
@@ -205,13 +207,13 @@
               <input type="radio" name="gender" id="male"> Male
               <input type="radio" name="gender" id="female"> Female
               <p>Click to see your Akan Name</p>
-              <input type="button" value="Check" onclick="display();">
-              <input type="button" value="Reset" onclick="reset();">
+              <input type="button" class="btn btn-secondary btn-rounded" value="Check Name" onclick="display();">
+              <input type="button" class="btn btn-outline-danger btn-rounded" data-mdb-ripple-color="dark" value="Clear" onclick="reset();">
             </div>
             
           </form>
     </div>
-    <div class="col-sm -6 align-self-center justify-content-lg-center herotext">
+    <div class="col-sm -6 align-self-center justify-content-lg-center herotext p-5">
         <h1 id="nametitle text-center">Hi, Gamaliel!</h1>
         <h5 id="borndate text-center">You we're born on FRIDAY 07-02-1997</h5>
         <h5 id="nameakan text-center">Your Akan name is: KWAME</h5>
