@@ -19,3 +19,11 @@
     margin-left: 20px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
+.akancard1:hover {
+    transition: 0.3s ease-in-out;
+    transform: scale(1.04);
+}
+.akancard2:hover {
+    transition: 0.3s ease-in-out;
+    transform: scale(1.04);
+}
