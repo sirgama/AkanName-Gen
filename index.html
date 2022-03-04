@@ -192,8 +192,24 @@
 
 
 <div class="container row akansection" id="akansection">
-    <div class="col-6">
-
+    <div class="col-sm -6 align-self-center justify-content-lg-center">
+        <form action="#" id="akan-form">
+            <div class="form-group form-check">
+              <label>Day</label>
+              <input type="number" class="form-control" min="1" max="31" name="day" id="day" placeholder="Day(1-31)">
+              <label>Month</label>
+              <input type="number" class="form-control" min="1" max="12" name="month" id="month" placeholder="Month (1-12)">
+              <label>Year</label>
+              <input type="number" class="form-control" min="1940" max="2022" name="year" id="year" placeholder="Year born (eg 2000)">
+              <p>Gender</p>
+              <input type="radio" name="gender" id="male"> Male
+              <input type="radio" name="gender" id="female"> Female
+              <p>Click to see your Akan Name</p>
+              <input type="button" value="Check" onclick="display();">
+              <input type="button" value="Reset" onclick="reset();">
+            </div>
+            
+          </form>
     </div>
     <div class="col-sm -6 align-self-center justify-content-lg-center herotext">
         <h1 id="nametitle text-center">Hi, Gamaliel!</h1>
