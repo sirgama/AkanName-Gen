@@ -1,6 +1,9 @@
 .hero {
-    height: 100vh;
+    height: 140vh;
     width: 100%;
+}
+.herotext {
+    margin-top: 30px;
 }
 .img-fluid {
     margin-top: 20px;
