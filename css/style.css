@@ -8,6 +8,9 @@
 .heroimage {
     margin-top: 100px;
 }
+.logoakan {
+    border-radius: 10px;
+}
 .img-fluid {
     margin-top: 20px;
     /* height: 100vh;
@@ -38,7 +41,7 @@
     transform: scale(1.04);
 }
 .akansection {
-    height: 130vh;
+    height: 140vh;
     width: 100%;
 }
 .form-group {
@@ -60,13 +63,17 @@ background: linear-gradient(90deg, rgba(191,160,183,0.35898109243697474) 0%, rgb
       height: 240vh;
     }
     .form-group {
-        height: 60vh;
+        height: 80vh;
         width: 80vw;
-        margin-top: 150px;
+        margin-top: 500px;
         border-radius: 20px;
         background: rgb(191,160,183);
     background: linear-gradient(90deg, rgba(191,160,183,0.35898109243697474) 0%, rgba(166,197,245,0.26094187675070024) 100%);
         box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+    .akansection {
+        height: 250vh;
+        width: 100%;
     }
     .form-control {
         width: 65vw;
