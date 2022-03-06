@@ -12,14 +12,14 @@ function output(){
         alert("Kindly Enter Your Name")
 
     }
-    else if (year === "") {
-        alert("Kindly enter your year of birth")
-    }
     else if (day === ""){
         alert("Enter a date between 1 & 31");
     }
     else if (month === "") {
         alert("Enter a month between 1 & 12");
+    }
+    else if (year === "") {
+        alert("Kindly enter your year of birth")
     }
     else {
         let datee = new Date(userBirthday);
