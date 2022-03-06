@@ -5,6 +5,8 @@ function output(){
     let month = document.getElementById("month").value;
     let year = document.getElementById("year").value;
     let userBirthday = month+"-"+ day + "-" + year;
+    let male = document.getElementById("male");
+    let female = document.getElementById("female");
 
     if (userPerson === "") {
         alert("Kindly Enter Your Name")
@@ -36,10 +38,24 @@ function output(){
             alert("Enter month between 1 and 12");
         }
         else {
-            document.getElementById("nametitle").innerHTML = `Hi, ${userPerson}, if I got your name right`;
-            document.getElementById("nametitle").innerHTML = `Hi, ${userPerson}, if I got your name right`;
+            
+            if (male.checked === true) {
+                document.getElementById("nametitle1").innerHTML = `and if I got it right, you are Male`;
+                document.getElementById("nametitle").innerHTML = `Hi, ${userPerson}`; `if I got your name right`;
+            
+                document.getElementById("borndate").innerHTML = `You were born on ${userBirthday}`;
+            }
+            else if (female.checked === true ){
+                document.getElementById("nametitle1").innerHTML = `and if I got it right, you are Female`;
+                document.getElementById("nametitle").innerHTML = `Hi, ${userPerson}`; `if I got your name right`;
+            
+                document.getElementById("borndate").innerHTML = `You were born on ${userBirthday}`;
+            }
+            else {
+                alert("Kindly select your gender");
+            }
         }
-      reset();
+     
         
     }
  
@@ -52,8 +68,7 @@ function dayOfTheWeek(day, month, year){
     let weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     maleGhanian = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
     femaleGhanian = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama'];
-    let male = document.getElementById("male");
-    let female = document.getElementById("female");
+    
 
 }
 
