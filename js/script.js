@@ -42,8 +42,8 @@ function output(){
             
                 document.getElementById("nametitle").innerHTML = `Hi, ${userPerson}`; `if I got your name right`;
                 
-                document.getElementById("borndate").innerHTML = `You were born on ` + dayValue[0] + " " +  userBirthday;
-                document.getElementById("nameakan").innerHTML = `Your Akan name is: ` + dayValue[1];
+                document.getElementById("borndate").innerHTML = `You were born on ` + dayValue[1] + " " +  userBirthday;
+                document.getElementById("nameakan").innerHTML = `Your Akan name is: ` + dayValue[0];
                
         }
      
@@ -63,11 +63,11 @@ function dayOfTheWeek(day, month, year){
     
     let dayOfWeek = (day + parseInt(((month + 1) * 26) / 10) + year + parseInt(year / 4) + 6 * parseInt(year / 100) + parseInt(year / 400) - 1) % 7;
     if (male.checked === true) {
-      return [maleGhanian[dayOfTheWeek] , weekDays[dayOfTheWeek]];
+      return [maleGhanian[dayOfWeek] , weekDays[dayOfWeek]];
         
     }
     else if (female.checked === true ){
-      return [femaleGhanian[dayOfTheWeek] , weekDays[dayOfTheWeek]];
+      return [femaleGhanian[dayOfWeek] , weekDays[dayOfWeek]];
         
     }
     else {
