@@ -42,14 +42,14 @@ function output(){
             if (male.checked === true) {
                 document.getElementById("nametitle1").innerHTML = `and if I got it right, you are Male`;
                 document.getElementById("nametitle").innerHTML = `Hi, ${userPerson}`; `if I got your name right`;
-            
-                document.getElementById("borndate").innerHTML = `You were born on ${userBirthday}`;
+                document.getElementById("nameakan").innerHTML = `Your Akan name is: `;
+                document.getElementById("borndate").innerHTML = `You were born on ` + dayOfWeek+ " " +  userBirthday;
             }
             else if (female.checked === true ){
                 document.getElementById("nametitle1").innerHTML = `and if I got it right, you are Female`;
                 document.getElementById("nametitle").innerHTML = `Hi, ${userPerson}`; `if I got your name right`;
-            
-                document.getElementById("borndate").innerHTML = `You were born on ${userBirthday}`;
+                document.getElementById("nameakan").innerHTML = `Your Akan name is: `;
+                document.getElementById("borndate").innerHTML = `You were born on ${dayOfWeek} ${userBirthday}`;
             }
             else {
                 alert("Kindly select your gender");
@@ -69,7 +69,7 @@ function dayOfTheWeek(day, month, year){
     maleGhanian = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
     femaleGhanian = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama'];
     
-
+    let dayOfWeek = (day + parseInt(((month + 1) * 26) / 10) + year + parseInt(year / 4) + 6 * parseInt(year / 100) + parseInt(year / 400) - 1) % 7;
 }
 
 
