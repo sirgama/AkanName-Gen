@@ -197,7 +197,7 @@
 
 <div class="container-fluid row akansection" id="akansection">
     <div class="col-sm -6 align-self-center justify-content-lg-center p-5">
-        <form action="#" id="akan-form">
+        <form action="#" id="akandata">
             <div class="form-group form-check"><br><br><br><br>
                 <label>Full name</label>
                 <input type="text" class="form-control" name="usrname" id="usrname" placeholder="Your full names">
@@ -211,16 +211,18 @@
               <input type="radio" name="gender" id="male"> Male
               <input type="radio" name="gender" id="female"> Female
               <p>Click to see your Akan Name</p>
-              <input type="button" class="btn btn-secondary btn-rounded" id="btnrd" value="Check Name" onclick="output();">
+              <input type="button" class="btn btn-secondary btn-rounded" id="btnrd" value="Check Name" onclick="output()">
               <input type="button" class="btn btn-outline-danger btn-rounded" data-mdb-ripple-color="dark" value="Clear" onclick="reset();">
             </div>
             
           </form>
     </div>
     <div class="col-sm -6 align-self-center justify-content-lg-center herotext p-5">
-        <h1 id="text-center nametitle"></h1>
-        <h5 id="borndate text-center"></h5>
-        <h5 id="nameakan text-center"></h5>
+        <h1 id="nametitle">Hi Gamaliel</h1>
+        <br><br>
+        <h5 id="borndate">You were born on Friday, 07-02-1997</h5>
+        <br><br>
+        <h5 id="nameakan">Your Akan name is Kofi</h5>
     </div>
 </div>
 
@@ -297,8 +299,9 @@
   </footer>
 
 
+    <script src="./js/script.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/mdb.min.js"></script>
-    <script src="./js/script.js"></script>
+   
 </body>
 </html>

@@ -1,4 +1,3 @@
-
 function output(){
 
     let userPerson = document.getElementById("usrname").value;
@@ -37,14 +36,25 @@ function output(){
             alert("Enter month between 1 and 12");
         }
         else {
-            document.getElementById("nametitle").innerHTML = "Hi, " + userPerson + ". I hope I got your name right";
+            document.getElementById("nametitle").innerHTML = `Hi, ${userPerson}, if I got your name right`;
+            document.getElementById("nametitle").innerHTML = `Hi, ${userPerson}, if I got your name right`;
         }
-      
+      reset();
         
     }
-   
+ 
+}
+  
+function reset(){
+    document.getElementById('akandata').reset();
+}
+function dayOfTheWeek(day, month, year){
+    let weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    maleGhanian = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
+    femaleGhanian = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama'];
+    let male = document.getElementById("male");
+    let female = document.getElementById("female");
 
-};
-
+}
 
 
