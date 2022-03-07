@@ -7,6 +7,12 @@ function output(){
     let userBirthday = month+"-"+ day + "-" + year;
     let male = document.getElementById("male");
     let female = document.getElementById("female");
+    let weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    maleGhanian = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
+    femaleGhanian = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama'];
+    
+    
+    
 
     if (userPerson === "") {
         alert("Kindly Enter Your Name")
@@ -26,6 +32,8 @@ function output(){
         let datePop = datee.getDate();
         let monthPop = datee.getMonth();
         let yearPop = datee.getFullYear();
+        let yy = year.slice(2,4);
+        let cc = year.slice(0,2);
 
         if (isNaN(datePop) === true && isNaN(monthPop) === true && isNaN(yearPop) === true){
             alert("Check your month or date and enter a valid value");
@@ -38,12 +46,15 @@ function output(){
             alert("Enter month between 1 and 12");
         }
         else {
-            let dayValue = dayOfTheWeek(datePop, (monthPop + 1), yearPop);
+            let dayOfWeek = ( ( (parseInt(cc)/4) -2*parseInt(cc)-1) + ((5* parseInt(yy)/4) ) + ((26*(parseInt(month)+1)/10)) +parseInt(day) ) % 7 
+
+            
+            /* let dayValue = dayOfTheWeek(datePop, (monthPop + 1), yearPop); */
             
                 document.getElementById("nametitle").innerHTML = `Hi, ${userPerson}`; `if I got your name right`;
                 
-                document.getElementById("borndate").innerHTML = `You were born on ` + dayValue[1] + " " +  userBirthday;
-                document.getElementById("nameakan").innerHTML = `Your Akan name is: ` + dayValue[0];
+                document.getElementById("borndate").innerHTML = `You were born on ` /* + dayValue[1] */ + " " +  userBirthday;
+                document.getElementById("nameakan").innerHTML = `Your Akan name is: ` /* + dayValue[0] */;
                
         }
      
@@ -55,14 +66,15 @@ function output(){
 function reset(){
     document.getElementById('akandata').reset();
 }
-function dayOfTheWeek(day, month, year){
+/* function dayOfTheWeek(day, month, year){
     let weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     maleGhanian = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
     femaleGhanian = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama'];
     
     
-    let dayOfWeek = (day + parseInt(((month + 1) * 26) / 10) + year + parseInt(year / 4) + 6 * parseInt(year / 100) + parseInt(year / 400) - 1) % 7;
-    if (male.checked === true) {
+    console.log(dayOfWeek) */
+    /* let dayOfWeek = (day + parseInt(((month + 1) * 26) / 10) + year + parseInt(year / 4) + 6 * parseInt(year / 100) + parseInt(year / 400) - 1) % 7; */
+    /* if (male.checked === true) {
       return [maleGhanian[dayOfWeek] , weekDays[dayOfWeek]];
         
     }
@@ -75,5 +87,5 @@ function dayOfTheWeek(day, month, year){
     }
     
 }
-
+ */
 
