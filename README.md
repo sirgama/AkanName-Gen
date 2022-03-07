@@ -36,7 +36,9 @@ The landing page is being hosted by Github Pages. The link to the page is:
 <a href="https://sirgama.github.io/AkanName-Gen/">https://sirgama.github.io/AkanName-Gen/</a>
 
 ### BDD
-
+* If a user does not fill in the input boxes - An alert pops up to inform the user to input data
+* When invalid day, month or year are input - An alert warns the user of invalid input
+* When a gender is not selected - an alert prompts the user to select a  gender
 
 ### Technology Used
 * HTML - which was used to build the structure of the pages.
