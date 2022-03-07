@@ -46,7 +46,10 @@ function output(){
             alert("Enter month between 1 and 12");
         }
         else {
-            let dayOfWeek = ( ( (parseInt(cc)/4) -2*parseInt(cc)-1) + ((5* parseInt(yy)/4) ) + ((26*(parseInt(month)+1)/10)) +parseInt(day) ) % 7 
+            let dayOfWeek = ( ( (parseInt(cc)/4) -2*parseInt(cc)-1) + ((5* parseInt(yy)/4) ) + ((26*(parseInt(month)+1)/10)) +parseInt(day) ) % 7;
+            let index = weekDays.indexOf(weekDays[parseInt(dayOfWeek)]);
+            console.log(index);
+
 
             console.log(parseInt(dayOfWeek));
             /* let dayValue = dayOfTheWeek(datePop, (monthPop + 1), yearPop); */
@@ -54,7 +57,16 @@ function output(){
                 document.getElementById("nametitle").innerHTML = `Hi, ${userPerson}`; `if I got your name right`;
                 
                 document.getElementById("borndate").innerHTML = `You were born on ` + weekDays[parseInt(dayOfWeek)] + " " +  userBirthday;
-                document.getElementById("nameakan").innerHTML = `Your Akan name is: ` /* + dayValue[0] */;
+                document.getElementById("nameakan").innerHTML = `Your Akan name is: ` + maleGhanian[index];
+            }
+            else if (female.checked === true){
+                document.getElementById("nametitle").innerHTML = `Hi, ${userPerson}`; `if I got your name right`;
+                
+                document.getElementById("borndate").innerHTML = `You were born on ` + weekDays[parseInt(dayOfWeek)] + " " +  userBirthday;
+                document.getElementById("nameakan").innerHTML = `Your Akan name is: ` + femaleGhanian[index];
+            }
+            else {
+                alert("Kindly select your gender");
             }
             
                 
