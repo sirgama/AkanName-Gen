@@ -48,13 +48,16 @@ function output(){
         else {
             let dayOfWeek = ( ( (parseInt(cc)/4) -2*parseInt(cc)-1) + ((5* parseInt(yy)/4) ) + ((26*(parseInt(month)+1)/10)) +parseInt(day) ) % 7 
 
-            
+            console.log(parseInt(dayOfWeek));
             /* let dayValue = dayOfTheWeek(datePop, (monthPop + 1), yearPop); */
-            
+            if (male.checked === true){
                 document.getElementById("nametitle").innerHTML = `Hi, ${userPerson}`; `if I got your name right`;
                 
-                document.getElementById("borndate").innerHTML = `You were born on ` /* + dayValue[1] */ + " " +  userBirthday;
+                document.getElementById("borndate").innerHTML = `You were born on ` + weekDays[parseInt(dayOfWeek)] + " " +  userBirthday;
                 document.getElementById("nameakan").innerHTML = `Your Akan name is: ` /* + dayValue[0] */;
+            }
+            
+                
                
         }
      
