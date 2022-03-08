@@ -36,14 +36,40 @@ The landing page is being hosted by Github Pages. The link to the page is:
 <a href="https://sirgama.github.io/AkanName-Gen/">https://sirgama.github.io/AkanName-Gen/</a>
 
 ### BDD
-* If a user does not fill in the input boxes - An alert pops up to inform the user to input data
-* When invalid day, month or year are input - An alert warns the user of invalid input
-* When a gender is not selected - an alert prompts the user to select a  gender
+1. Displays Form For Entering Date and Gender
+   - INPUT: User Enters Birthday via 3 inputs Day, Month & Year.
+   - INPUT: User chooses either Male or Female
+   - OUTPUT: Akan Name is Diplayed According What the User as Entered and Choosed
+
+2. Displays an Error Message if Date Input Left Blank
+   - INPUT: ""
+   - OUTPUT: Enter Date Between 1 & 31
+
+3. Displays an Error Message if Month Input is Left Blank
+   - INPUT: ""
+   - OUTPUT: Enter Month Between 1 & 12
+
+4. Displays an Error Message if Year Input is Left Blank
+   - INPUT: ""
+   - OUTPUT: Enter Year Between 1940 and 2022
+
+5. Displays an Error Message if One or All Inputs is Left Blank or an incorrect value is entered
+   - INPUT: "month 13" or "day 45"
+   - OUTPUT: Check your month or date and enter a valid value
+   - OUTPUT: Seems either your month or date has an invalid value
+
+6. Displays an Error Message if Gender Not Chosen
+   - INPUT: "" 
+   - OUTPUT: Kindly select your gender 
+
+7. Clears Form and Reset the Message on Click
+   - INPUT: Click Reset Button
+   - OUTPUT: Clears the Form Data
 
 ### Technology Used
 * HTML - which was used to build the structure of the pages.
 
-* CSS - which was used to style the form inputs, welcome page and result/score section.
+* CSS - which was used to add custom styling to MD bootstrap classes.
 
 * JAVASCRIPT - Used to add functionality to buttons and calculations.
 
